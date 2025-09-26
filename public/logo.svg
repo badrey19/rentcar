@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <text x="0" y="45" font-family="Poppins, sans-serif" font-size="40" font-weight="700" fill="#2563EB">
+    Rent
+  </text>
+  <text x="115" y="45" font-family="Poppins, sans-serif" font-size="40" font-weight="700" fill="#FACC15">
+    Car
+  </text>
+  <circle cx="190" cy="40" r="8" fill="#2563EB"></circle>
+  <circle cx="160" cy="40" r="8" fill="#FACC15"></circle>
+</svg>

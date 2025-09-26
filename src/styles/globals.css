@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* src/styles/globals.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+@layer utilities {
+  .animation-delay-150 { animation-delay: 0.15s; }
+  .animation-delay-300 { animation-delay: 0.3s; }
+}
