@@ -21,18 +21,24 @@ const CTA: React.FC = () => {
   });
 
   // handle input change
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   // handle form submit
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // convert FormData object to plain object
+    const emailData: Record<string, string> = { ...formData };
+
     emailjs
       .send(
         "service_c5fzo7v", // ganti dengan Service ID EmailJS
         "template_gjwty4x", // ganti dengan Template ID EmailJS
-        formData,
+        emailData,
         "z7jkIUGHp-pWCrQHt" // ganti dengan Public Key EmailJS
       )
       .then(() => {

@@ -1,8 +1,8 @@
 "use client";
 
-import { Typewriter } from "react-simple-typewriter";
+// import { Typewriter } from "react-simple-typewriter";
 import { useDarkMode } from "@/context/DarkModeContext";
-import { Loader2 } from "lucide-react";
+// import { Loader2 } from "lucide-react";
 
 const Loading: React.FC = () => {
   const { isDark } = useDarkMode();
